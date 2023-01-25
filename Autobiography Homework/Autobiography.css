@@ -39,7 +39,7 @@ body{
     font-size: 150%;
 }
 .footer:visited{
-    color: yellow;
+    color: greenyellow;
 }
 #prva::first-letter{
     font-size: 200%;
@@ -48,4 +48,7 @@ body{
     text-decoration: line-through;
     font-family: 'Times New Roman', Times, serif;
     
+}
+.Naslov{
+    text-shadow: none;
 }
