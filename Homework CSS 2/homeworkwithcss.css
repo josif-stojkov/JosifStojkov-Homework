@@ -1,0 +1,46 @@
+
+#prvblok{
+    float:left;
+    background:green;
+    color: white;
+    width:30%;
+    height:100px;
+    padding: initial;
+    margin: 20px 20px 20px 20px;
+    border: 3px solid black;
+    overflow: hidden;
+}
+#vtorblok{
+    float:left;
+    background:darkred;
+    color: white;
+    margin: 20px 20px 20px 20px;
+    width:30%;
+    overflow: auto;
+    padding: initial;
+    border: 3px solid black;
+    height:100px
+}
+#tretblok{
+    float:right;
+    background:rgb(170, 170, 67);
+    color: rgb(144, 84, 84);
+    width:30%;
+    height:100px;
+    padding: initial;
+    margin: 20px 20px 20px 20px;
+    border: 3px solid black; 
+    overflow: visible;
+}
+#prvblok:hover{
+    transform:scale(1.150)
+}
+#tretblok:hover{
+    transform:scale(1.150)
+}
+#vtorblok:hover{
+    transform: rotate(90deg);
+}
+#vtorblok:hover{
+    transition: transform 6s linear 1s;}
+    
