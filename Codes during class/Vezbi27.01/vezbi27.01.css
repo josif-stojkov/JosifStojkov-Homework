@@ -1,0 +1,126 @@
+@keyframes eden {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    12%{
+        transform: translate(0px, 100px);
+    }
+    25%{
+        transform: translate(0px, 200px);
+    }
+    37%{
+        transform: translate(100px, 200px);
+    }
+    50%{
+        transform: translate(200px, 200px);
+    }
+    62%{
+        transform: translate(200px, 100px);
+    }
+    75%{
+        transform: translate(200px, 0px);
+    }
+    87%{
+        transform: translate(100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes dva {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    12%{
+        transform: translate(-100px, 0px);
+    }
+    25%{
+        transform: translate(-100px, 100px);
+    }
+    37%{
+        transform: translate(-100px, 200px);
+    }
+    50%{
+        transform: translate(0px, 200px);
+    }
+    62%{
+        transform: translate(100px, 200px);
+    }
+    75%{
+        transform: translate(100px, 100px);
+    }
+    87%{
+        transform: translate(100px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes tri {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    12%{
+        transform: translate(-100px, 0px);
+    }
+    25%{
+        transform: translate(-200px, 0px);
+    }
+    37%{
+        transform: translate(-200px, 100px);
+    }
+    50%{
+        transform: translate(-200px, 200px);
+    }
+    62%{
+        transform: translate(-100px, 200px);
+    }
+    75%{
+        transform: translate(0px, 200px);
+    }
+    87%{
+        transform: translate(0px, 100px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+
+#prva{
+    float:left;
+    width:60px;
+    height:60px;
+    padding: initial;
+    margin: 20px 20px 20px 20px;
+}
+#vtora{
+    float:left;
+    margin: 20px 20px 20px 20px;
+    width:60px;
+    padding: initial;
+    height:60px
+}
+#treta{
+    float:left;
+    width:60px;
+    height:60px;
+    padding: initial;
+    margin: 20px 20px 20px 20px;
+}
+
+#prva{
+    animation: eden 5s linear 0s infinite;
+
+}
+#vtora{
+    animation: dva 5s linear 1s infinite;
+}
+#treta{
+    animation: tri 5s linear 2s infinite ;
+}
+
+
+
