@@ -1,3 +1,33 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes swap {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    50% {
+      transform: translateX(100%) scale(2);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
 
 #prvblok{
     float:left;
@@ -43,4 +73,110 @@
 }
 #vtorblok:hover{
     transition: transform 6s linear 1s;}
-    
+#prvblok:hover{
+    transition: transform 2s linear 1s;
+}
+#tretblok:hover{
+    transition: transform 2s linear 1s;
+}
+span{
+    box-sizing: border-box;  
+}
+#nav{
+    width: 25%;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+}
+#nav1{
+    width: 300px;
+    height: 100px;
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+}
+#nav2{
+    width: 25%;
+    height: 100px;
+    background-color: darkgray;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+}
+#nav3{
+    width: 25%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+}
+#prvspan{
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+    float: left;
+    position: sticky;
+}
+#vtorspan{
+    background-color: grey;
+    font-size: 20px;
+    color: white;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+    float: left;
+    overflow: scroll;
+    position: sticky;
+}
+#tretspan{
+    background-color: darkgray;
+    font-size: 20px;
+    color: white;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+    float: left;
+    position: sticky;
+}
+#cetvrtspan{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    width: 260px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    margin: 20px 20px 20px 50px;
+    overflow: auto;
+    float: left;
+    position: sticky;
+}
+#prvspan {
+    animation: rotate 3s forwards 1s;
+  }
+
+  #vtorspan {
+    animation: pulse 3s infinite 1s
+  }
+
+  #tretspan, #cetvrtspan:hover {
+    animation-name: swap;
+    animation-fill-mode: forwards;
+  }
+  
