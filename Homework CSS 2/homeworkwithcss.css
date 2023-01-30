@@ -17,15 +17,20 @@
       transform: scale(1);
     }
   }
-  @keyframes swap {
+  @keyframes swaping1 {
     0% {
-      transform: translateX(0) scale(1);
-    }
-    50% {
-      transform: translateX(100%) scale(2);
+      transform: translateX(0px);
     }
     100% {
-      transform: translateX(0) scale(1);
+      transform: translateX(300px);
+    }
+  }
+  @keyframes swaping2 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-300px);
     }
   }
 
@@ -175,8 +180,21 @@ span{
     animation: pulse 3s infinite 1s
   }
 
-  #tretspan, #cetvrtspan:hover {
-    animation-name: swap;
-    animation-fill-mode: forwards;
+  #tretspan{
+    animation: swaping1 3s forwards 1s;
   }
-  
+  #cetvrtspan{
+    animation: swaping2 3s forwards 1s;
+  }
+  .navbar{
+    overflow: hidden;
+  }
+  .navbar,.sticky{
+    padding: 1%;
+    position: sticky;
+    top: 0;
+  }
+  .navbar:hover+.css{
+    position: sticky;
+    z-index: auto;
+  }
