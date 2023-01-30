@@ -189,12 +189,12 @@ span{
   .navbar{
     overflow: hidden;
   }
-  .navbar,.sticky{
+  .navbar{
     padding: 1%;
     position: sticky;
     top: 0;
   }
-  .navbar:hover+.css{
+  .navbar:hover{
     position: sticky;
     z-index: auto;
   }
