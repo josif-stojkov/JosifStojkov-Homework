@@ -186,15 +186,14 @@ span{
   #cetvrtspan{
     animation: swaping2 3s forwards 1s;
   }
-  .navbar{
+  #navbar{
     overflow: hidden;
   }
-  .navbar{
+  #navbar{
     padding: 1%;
-    position: sticky;
-    top: 0;
+    position: fixed;
   }
-  .navbar:hover{
-    position: sticky;
+  #navbar:hover{
+    position: fixed;
     z-index: auto;
   }
