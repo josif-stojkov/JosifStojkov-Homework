@@ -1,4 +1,4 @@
-/* *{
+*{
     font-family: 'Times New Roman', Times, serif;
     color: black;
 
@@ -10,25 +10,25 @@ body{
     border: 1px solid black; 
 }
 #home{
-    background: url('icons8-home-page-30.png') no-repeat left top;
+    background: url('/IMGS/icons8-home-page-30.png') no-repeat left top;
     height: 34px;
     padding-top: 7px;
     padding-left: 44px;
 }
 #about{
-    background: url('icons8-info-30.png') no-repeat left top;
+    background: url('/IMGS/icons8-info-30.png') no-repeat left top;
     height: 34px;
     padding-top: 7px;
     padding-left: 44px;
 }
 #contact{
-    background: url('icons8-contact-30.png') no-repeat left top;
+    background: url('/IMGS/icons8-contact-30.png') no-repeat left top;
     height: 34px;
     padding-top: 7px;
     padding-left: 44px;
 }
 #mission{
-    background: url('icons8-mission-30.png') no-repeat left top;
+    background: url('/IMGS/icons8-mission-30.png') no-repeat left top;
     height: 34px;
     padding-top: 7px;
     padding-left: 44px;
@@ -94,6 +94,10 @@ body{
     display: inline-grid;
     grid-template-areas: 'imgage paragr ' 'imgage paragr1';
 }
+#user1{
+    display: inline-grid;
+    grid-template-areas: 'imgage paragr ' 'imgage paragr1';
+}
 #img{
     grid-area: imgage;
     border-radius: 50%;
@@ -103,6 +107,12 @@ body{
     grid-area: paragr;;
 }
 #p2{
+    grid-area: paragr1;
+}
+#p11{
+    grid-area: paragr;;
+}
+#p22{
     grid-area: paragr1;
 }
 #krajno{
@@ -118,4 +128,4 @@ nav{
 #prvdel{
     margin-left:60px;
     margin-bottom: 10px;
-} */
+}
