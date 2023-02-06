@@ -1,0 +1,121 @@
+/* *{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+body{
+    height: fit-content;
+    background-color: rgb(229, 224, 224); 
+    margin: 0; 
+    border: 1px solid black; 
+}
+#home{
+    background: url('icons8-home-page-30.png') no-repeat left top;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+#about{
+    background: url('icons8-info-30.png') no-repeat left top;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+#contact{
+    background: url('icons8-contact-30.png') no-repeat left top;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+#mission{
+    background: url('icons8-mission-30.png') no-repeat left top;
+    height: 34px;
+    padding-top: 7px;
+    padding-left: 44px;
+}
+.container {
+    display: grid;
+    grid-template-rows: 100px 300px 900px;
+    grid-template-columns: 300px 300px;
+    grid-template-areas: 'header header header'
+    'sidebar main main'
+    'sidebar main main'
+    'footer footer footer';
+}
+#mainp1{
+  border: 1px solid black;
+  width: 800px;
+  height: 500px;
+  margin: 20px 20px 20px 20px;
+}
+#mainp2{
+  border: 1px solid black;
+  width: 800px;
+  height: 500px;
+  margin: 20px 20px 20px 20px;
+}
+.header{
+    grid-area: header;
+    text-align: center;
+    background-color: grey;
+    height: 70px;
+    position: static;
+    top: 0;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+#mainp1{
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5%;
+}
+#mainp2{
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5%;
+}
+#footer{
+    grid-area: footer;
+    background-color: gray;
+    text-align: center;
+    height: 70px;
+}
+#img1{
+    position: static;
+    border: 2px solid black;
+    margin-left:60px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+#user{
+    display: inline-grid;
+    grid-template-areas: 'imgage paragr ' 'imgage paragr1';
+}
+#img{
+    grid-area: imgage;
+    border-radius: 50%;
+    padding: 10px;
+}
+#p1{
+    grid-area: paragr;;
+}
+#p2{
+    grid-area: paragr1;
+}
+#krajno{
+    color: red;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    margin-top: 200px;
+    margin-left:50px ;
+}
+#prvdel{
+    margin-left:60px;
+    margin-bottom: 10px;
+} */
