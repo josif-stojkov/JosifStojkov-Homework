@@ -25,51 +25,56 @@
   </head>
   <body>
     <article class="container-fluid p-0 row">
-      <span class="fixed-top text-center">
-        <header class="bg-secondary">
+        <header class="bg-secondary fixed-top">
           <h1>Leaders of Political Party </h1>
         </header>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Home</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-danger" aria-current="page" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Content</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-danger">Mission</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-danger" type="submit">Search</button>
-                </form>
-              </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Link
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
-          </nav>
-      </span>
+          </div>
+        </nav>
       <!-- Navbar and Header-->
-      <main class="bg-white">
-        <article class="karticka col-md-3">
-        <div class="card m-3 col-md-4" style="width: 18rem">
+      <main class="bg-white row">
+        <div class="col col-md-3">
           <img
             src="/Bootstrap/Zoran_Zaev_official_portrait_2020_(cropped).jpg"
             class="card-img-top"
             alt="..."
           />
-          <div class="card-body">
             <h3 class="card-text">Zoran Zaev</h3>
           </div>
-        </div>
-      </article>
-      <div class="col-md-6">
+          <div class="col col-md-6">
           <img
             class="rounded-circle text-left"
             width="60px"
@@ -112,31 +117,8 @@
           </p>
           <a href="#">Read More</a>
         </div>
-        <div
-          class="mainp2 w-50  col-md-4 border"
-        >
-          <img
-            class="rounded-circle"
-            width="60px"
-            height="80px"
-            src="/EPP_Summit,_Brussels;_December_2014_(15862097258)_(cropped).jpg"
-            alt=""
-          />
-          <h3 id="p11">Nikola Gruevski</h3>
-          <p id="p22">19:35 • Budapest HUG</p>
-          <br />
-          <img
-            id="img1"
-            src="/D_MTZ20190627005b.jpg"
-            width="400px"
-            height="300px"
-            alt=""
-          />
-          <br />
-          <a href="#">Read More</a>
-        </div>
         <!-- col-md-3 w-25 offset-md-3 -->
-        <div class="main3 border col-md-3">
+        <div class="col col-md-3">
           <h3>Zoran Zaev</h3>
           <p>
             Zoran Zaev is a Macedonian economist and politician who served
@@ -146,16 +128,17 @@
           <h2>Born-8 October</h2>
           <h2>Job-Ex Prime Minister</h2>
         </div>
-        </div>
       </main>
       <!-- Main -->
-      <footer class="footer bg-secondary fixed-bottom text-center">
+      <div class="fixed-bottom">
+      <footer>
         <a
           href="https://github.com/josif-stojkov/JosifStojkov-Homework"
           target="_blank"
           ><h3 id="krajno">Josif Stojkov @ All Rights Reserved</h3></a
         >
       </footer>
+    </div>
       <!-- Footer -->
     </article>
     <!-- All elements done -->
