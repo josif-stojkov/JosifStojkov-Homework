@@ -6,7 +6,6 @@ function removeElement(Arr, num) {
     return Arr;
   }
   
-  // Example usage
   let Arr = [1, 2, 3, 4, 5];
   let numToRemove = 3;
   let newArr = removeElement(Arr, numToRemove);
@@ -22,7 +21,6 @@ function removeElement(Arr, num) {
     return count;
   }
   
-  // Example usaeg
   let num = 12345;
   let digitCount = countDigits(num);
   console.log(digitCount); // 5
@@ -37,7 +35,6 @@ function removeElement(Arr, num) {
     return max;
   }
   
-  // Example usge
   let arr = [10, 20, 30, 40, 50];
   let largestNumber = findLargestNumber(arr);
   console.log(largestNumber); //50
