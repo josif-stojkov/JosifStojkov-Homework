@@ -31,3 +31,4 @@ submitBtn.addEventListener("click", function(event) {
     alert("OK");
   }
 });
+console.log(addEventListener);
