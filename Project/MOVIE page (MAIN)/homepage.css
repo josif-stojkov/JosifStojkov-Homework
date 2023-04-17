@@ -1,0 +1,107 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  /* margin: 0; */
+}
+img{
+  width: 100%;
+}
+.multi-color-background {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #7c1509, #8b6410, #095809, #06315c, #570657, #30074f);
+  background-size: 1500% 1500%;
+  animation: gradient 20s ease infinite;
+  transition: background-position 1s ease;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.multi-color-background:hover {
+  background-position: right;
+}
+
+.header-img {
+  height: 9%;
+  width: 15%;
+}
+.header{
+  text-align: center;
+  color: white;
+}
+header h1 {
+  display: inline;
+}
+
+.nav-link{
+  color: white;
+}
+
+.font{
+  color: white;
+}
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.filter-bar label {
+  margin-right: 10px;
+}
+
+#sort{
+  color: white;
+}
+
+#pricing{
+  text-align: center;
+  color: white;
+}
+.card-img-top{
+  min-height: 330px;
+  max-height: 330px;
+}
+.col-md-3 .card-body{
+  min-height: 202px;
+  max-height: 202px;
+  padding-bottom: 30px;
+}
+.col-md-3{
+  position: relative;
+}
+.kopce{
+  display: block;
+  position: absolute;
+  bottom: 5%;
+}
+p{
+  position: absolute;
+  bottom: 13%;
+}
+#trcena{
+  color: white;
+}
+
+td{
+  color: white;
+}
+#doleboja{
+  color: white;
+}
+.prvdel{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}

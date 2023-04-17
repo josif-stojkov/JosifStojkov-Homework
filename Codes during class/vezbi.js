@@ -7,7 +7,7 @@
 // // }
 
 // // let lion = new Animal ("CAT", "Africa")
-// // let grizzly_bear = new Animal ("BEAR", "North Africa" ) 
+// // let grizzly_bear = new Animal ("BEAR", "North Africa" )
 
 // // console.log(grizzly_bear.lenght);
 
@@ -34,7 +34,7 @@
 //     console.log(Node)
 // }
 // let myArray = [7, 2, 1, 4, 5];
-// iterateArray(myArray, 3); 
+// iterateArray(myArray, 3);
 // function iterateArray(array, repeatCount) {
 //     let currentIndex = 0;
 //     let iterationCount = 0;
@@ -51,9 +51,8 @@
 //     }, 1000);
 //   }
 
-
 // let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2]; //Prvo gi deklarirame dvete nizi
-// let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26]; 
+// let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
 // let sum = 0; //potoa deklarirame varijabla i ja inicijalizirame so 0
 // for (let i = 0; i < arr_1.length; i++) { // vo for go inicijalizirame i na 0 pa proveruvame dali i e pomalo od prvata niza i so loop pominuvame niz cela niza
 //   sum += arr_1[i]; // ja dodavame vrednosta na arr_1 na momentalnata vrednost na sumata i zacuvaj go rezultatot naza vo suma
@@ -61,11 +60,72 @@
 // for (let i = 0; i < arr_2.length; i++) {
 //   sum += arr_2[i];
 // }
-// console.log(sum); 
+// console.log(sum);
 
-let str2 = "don't know why"; //deklalirame string 
-if (str2.includes("y")) { //provervame dali ima y vo stringot dokolku ima pecati yes 
-  console.log("yes");
-} else {
-  console.log("no"); //dokolku ne pecati no
-}
+// let str2 = "don't know why"; //deklalirame string
+// if (str2.includes("y")) { //provervame dali ima y vo stringot dokolku ima pecati yes
+//   console.log("yes");
+// } else {
+//   console.log("no"); //dokolku ne pecati no
+// }
+
+// let par1 = "tEsT1234ZaZaDaCa"
+// function changeLetters (par1)
+// let result = ""
+//   for(let i = 0; i < par1.length; i++){
+//     if(par1[i] == par1[i].toUppercase)
+//     result += par1[i].toLowerCase();{
+//     else {
+//     result += par1[i].toUpperCase();
+//     }
+
+//   }
+//   }
+
+// return(result)
+
+
+
+
+
+// document.body.innerHTML = "<h1>" + par1 + "</h1>"
+// par1 = par1.toUppercase();
+
+// let niza = ["test1234", "imthemanager", "ee"];
+// function maxString(arr) {
+//   let maxStr = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > maxStr.length) {
+//       maxStr = arr[i];
+//     }
+//   }
+//   return maxStr;
+// }
+// let tra = maxString(niza);
+// console.log(tra);
+// function js_style() {
+// document.getElementById("text").style.color = "yellow";
+// document.getElementById("text").style.backgroundColor = "blue";
+// }
+
+
+
+
+
+
+// fetch('/readme.txt')
+// .then (response => response.text())
+// .then (response => console.log(data));
+
+// async function fetchText() {
+//     let response = await fetch ('/readme.txt');
+//     console.log(response.status);
+//     console.log(response.stautsText);
+
+//     if (response.status === 200) {
+//         let data = await response.text();
+//     }
+// }
+
+// fetchText();
+
