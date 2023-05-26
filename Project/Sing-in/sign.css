@@ -1,0 +1,94 @@
+.multi-color-background {
+    height: 941px;
+    width: 100%;
+    background: linear-gradient(to right, #7c1509, #8b6410, #095809, #06315c, #570657, #30074f);
+    background-size: 1500% 1500%;
+    animation: gradient 20s ease infinite;
+    transition: background-position 1s ease;
+  }
+  .custom-container {
+	min-width: 200px;
+	max-width: 500px;
+	padding: 20px;
+	margin-left: 500px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+  body{
+	margin: 0;
+  }
+  .header-img {
+	height: 9%;
+	width: 15%;
+	display: inline;
+	position: left;
+	margin-left: 0;
+  }
+  .header{
+	text-align: center;
+	color: white;
+  }
+  header h1 {
+	font-size: 50px;
+	display: inline;
+	text-align: center;
+	color: white;
+	position: absolute;
+	margin-top: 90px;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .multi-color-background:hover {
+    background-position: right;
+  }
+
+h1 {
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #221E20;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}

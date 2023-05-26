@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Nord Wind</title>
-    <link rel="icon" href="./Pictuers used i PJ/Nord Wind BLACK.png" type="image/icon type">
+    <link rel="icon" href="./Pictuers used i PJ/Nord Wind WHITE.png" type="image/icon type">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,51 +14,36 @@
       <img class="header-img" src ="./Pictuers used i PJ/Nord Wind WHITE.png" alt="/" href="/"/>
         <h1>Nord Wind</h1>
     </header>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="filter-bar">
-            <label id="sort" for="sort-by">Sort by genre:</label>
-            <select id="sort-by" class="form-control">
-              <option value="all">All</option>
-              <option value="action">Action</option>
-              <option value="comedy">Comedy</option>
-              <option value="drama">Drama</option>
-              <option value="horror">Horror</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>     -->
     <nav class="container">
       <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
           <a class="nav-link prvdel font-weight-bold" href="http://127.0.0.1:5500/homepage.html">MOVIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link prvdel font-weight-bold" href="#comedy">TV SHOWS</a>
+          <a class="nav-link prvdel font-weight-bold" href="http://127.0.0.1:5500/Project/TV%20SHOWS%20page/tvshows.html">TV SHOWS</a>
         </li>
+        <button class="signin2 btn-lg nav-link" onclick="location.href = 'http://127.0.0.1:5500/Project/Sing-in/sign.html';">Sign In</button>
         <br>
+        <!-- NAVBAR -->
     <nav class="container">
       <ul class="nav nav-tabs justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="#action">Action</a>
+          <button class="nav-link kopce1" onclick="filterCategory('action')">Action</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#comedy">Comedy</a>
+          <button class="nav-link kopce1" onclick="filterCategory('comedy')">Comedy</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#drama">Drama</a>
+          <button class="nav-link kopce1" onclick="filterCategory('drama')">Drama</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#horror">Horror</a>
-          
+          <button class="nav-link kopce1" onclick="filterCategory('horror')">Horror</button>
         </li>
       </ul>
     </nav>
     <main class="container my-5">
       <!-- ACTION MOVIES  -->
-      <section id="action">
+      <section id="action" class="genre">
         <h2 class="font">Action</h2>
         <div class="row">
           <div class="col-md-3">
@@ -67,9 +52,7 @@
               <div class="card-body">
                 <h5 class="card-title">John Wick 4 (2023)</h5>
                 <p>Genre: Action</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/john-wick-chapter-4-2023/watching.html';">
-                  Watch now
-                </button>
+                  <a href="https://www.hdsaprevodom.com/film/john-wick-chapter-4-2023/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -79,9 +62,7 @@
               <div class="card-body">
                 <h5 class="card-title">Red Notice (2021)</h5>
                 <p>Genre: Action</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.filmoviserije.net/film/red-notice-2021';">
-                  Watch now
-                </button>
+                <a href="https://www.filmoviserije.net/film/red-notice-2021" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -91,9 +72,7 @@
               <div class="card-body">
                 <h5 class="card-title">Inside Man (2006)</h5>
                 <p>Genre: Action</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.filmoviserije.net/serija/inside-man-2022';">
-                  Watch now
-                </button>
+                  <a href="https://www.filmoviserije.net/serija/inside-man-2022" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -103,16 +82,14 @@
               <div class="card-body">
                 <h5 class="card-title">Luther: The Fallen Sun (2023)</h5>
                 <p>Genre: Action</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/luther-the-fallen-sun-2023/watching.html';">
-                  Watch now
-                </button>
+                  <a href="https://www.hdsaprevodom.com/film/luther-the-fallen-sun-2023/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- COMEDY MOVIES  -->
-      <section id="comedy">
+      <section id="comedy" class="genre">
         <h2 class="font">Comedy</h2>
         <div class="row">
           <div class="col-md-3">
@@ -121,9 +98,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Hangover (2009)</h5>
                 <p>Genre: Comedy</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/the-hangover-2009/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/the-hangover-2009/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -133,9 +108,7 @@
               <div class="card-body">
                 <h5 class="card-title">Bridesmaids (2011)</h5>
                 <p>Genre: Comedy</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.filmovi.me/bridesmaids-2011 ';">
-                  Watch now
-                </button>
+                <a href="https://www.filmovi.me/bridesmaids-2011" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -145,9 +118,7 @@
               <div class="card-body">
                 <h5 class="card-title">You Don't Mess with the Zohan (2008)</h5>
                 <p>Genre: Comedy</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://onlinesaprevodom.net/you-dont-mess-with-the-zohan/';">
-                  Watch now
-                </button>
+                <a href="https://onlinesaprevodom.net/you-dont-mess-with-the-zohan/" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -157,16 +128,14 @@
               <div class="card-body">
                 <h5 class="card-title">Big Daddy (1999)</h5>
                 <p>Genre: Comedy</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.filmovi.me/big-daddy-1999';">
-                  Watch now
-                </button>
+                <a href="https://www.filmovi.me/big-daddy-1999" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- DRAMA MOVIES  -->
-      <section id="drama">
+      <section id="drama" class="genre">
         <h2 class="font">Drama</h2>
         <div class="row">
           <div class="col-md-3">
@@ -175,9 +144,7 @@
               <div class="card-body">
                 <h5 class="card-title">Interstellar (2014)</h5>
                 <p>Genre: Drama</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/interstellar-2014/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/interstellar-2014/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -187,9 +154,7 @@
               <div class="card-body">
                 <h5 class="card-title">Coach Carter (2005)</h5>
                 <p>Genre: Drama</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/coach-carter-2005/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/coach-carter-2005/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -199,9 +164,7 @@
               <div class="card-body">
                 <h5 class="card-title">Fifty Shades of Grey (2015)</h5>
                 <p>Genre: Drama</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/fifty-shades-of-grey-2015/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/fifty-shades-of-grey-2015/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -211,16 +174,14 @@
               <div class="card-body">
                 <h5 class="card-title">American Made (2017)</h5>
                 <p>Genre: Drama</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/american-made-2017/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/american-made-2017/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- HORROR MOVIES -->
-      <section id="horror">
+      <section id="horror" class="genre">
         <h2 class="font">Horror</h2>
         <div class="row">
           <div class="col-md-3">
@@ -229,9 +190,7 @@
               <div class="card-body">
                 <h5 class="card-title">Hereditary (2018)</h5>
                 <p>Genre: Horror</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/hereditary-2018/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/hereditary-2018/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -241,9 +200,7 @@
               <div class="card-body">
                 <h5 class="card-title">Scream (1996)</h5>
                 <p>Genre: Horror</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/scream-1996/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/scream-1996/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -253,9 +210,7 @@
               <div class="card-body">
                 <h5 class="card-title">The Conjuring (2013)</h5>
                 <p>Genre: Horror</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/the-conjuring-2013/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/the-conjuring-2013/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
@@ -265,16 +220,14 @@
               <div class="card-body">
                 <h5 class="card-title">Sinister (2012)</h5>
                 <p>Genre: Horror</p>
-                <button class="btn btn-outline-dark kopce" target="_blank" onclick="window.location.href='https://www.hdsaprevodom.com/film/sinister-2012/watching.html';">
-                  Watch now
-                </button>
+                <a href="https://www.hdsaprevodom.com/film/sinister-2012/watching.html" class="btn btn-outline-dark kopce" target="_blank">Watch Now</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       </main>     
-      <!-- pricing  -->
+      <!-- PRICING -->
   <div class="container py-3">
     <main>
       <h1 id="pricing">Pricing:</h1>
@@ -288,7 +241,7 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title">$6<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Free Frist Month</li>
+                <li>Free First Month</li>
                 <li>Unsubscribe Anytime</li>
                 <li>Film & TV Show Unlimitid</li>
                 <li>Watch on TV. PC.</li>
@@ -307,7 +260,7 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title">$12<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Free Frist Month</li>
+                <li>Free First Month</li>
                 <li>Unsubscribe Anytime</li>
                 <li>Film & TV Show Unlimitid</li>
                 <li>Watch on TV. PC.</li>
@@ -326,14 +279,14 @@
             <div class="card-body">
               <h1 class="card-title pricing-card-title">$18<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Free Frist Month</li>
+                <li>Free First Month</li>
                 <li>Unsubscribe Anytime</li>
                 <li>Available Ultra HD</li>
                 <li>All Standard Features</li>
                 <li>3D Sound Effect</li>
                 <li>Latest Release</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-dark">Contact us</button>
+              <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
             </div>
           </div>
         </div>
@@ -353,7 +306,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row" class="text-start text-white">Free Frist Month</th>
+              <th scope="row" class="text-start text-white">Free First Month</th>
               <td>&#10003;</td>
               <td>&#10003;</td>
               <td>&#10003;</td>

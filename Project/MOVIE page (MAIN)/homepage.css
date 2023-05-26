@@ -1,14 +1,22 @@
-body{
-  font-family: 'Times New Roman', Times, serif;
+body {
+  font-family: "Times New Roman", Times, serif;
   /* margin: 0; */
 }
-img{
+img {
   width: 100%;
 }
 .multi-color-background {
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, #7c1509, #8b6410, #095809, #06315c, #570657, #30074f);
+  background: linear-gradient(
+    to right,
+    #7c1509,
+    #8b6410,
+    #095809,
+    #06315c,
+    #570657,
+    #30074f
+  );
   background-size: 1500% 1500%;
   animation: gradient 20s ease infinite;
   transition: background-position 1s ease;
@@ -34,7 +42,7 @@ img{
   height: 9%;
   width: 15%;
 }
-.header{
+.header {
   text-align: center;
   color: white;
 }
@@ -42,11 +50,11 @@ header h1 {
   display: inline;
 }
 
-.nav-link{
+.nav-link {
   color: white;
 }
 
-.font{
+.font {
   color: white;
 }
 .filter-bar {
@@ -62,46 +70,63 @@ header h1 {
   margin-right: 10px;
 }
 
-#sort{
+#sort {
   color: white;
 }
 
-#pricing{
+#pricing {
   text-align: center;
   color: white;
 }
-.card-img-top{
+.card-img-top {
   min-height: 330px;
   max-height: 330px;
 }
-.col-md-3 .card-body{
+.col-md-3 .card-body {
   min-height: 202px;
   max-height: 202px;
   padding-bottom: 30px;
 }
-.col-md-3{
+.col-md-3 {
   position: relative;
 }
-.kopce{
+.kopce {
   display: block;
   position: absolute;
   bottom: 5%;
 }
-p{
+p {
   position: absolute;
   bottom: 13%;
 }
-#trcena{
+#trcena {
   color: white;
 }
 
-td{
+td {
   color: white;
 }
-#doleboja{
+#doleboja {
   color: white;
 }
-.prvdel{
+.prvdel {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
+}
+.signin2 {
+  float: right;
+  display: block;
+  position: absolute;
+  margin-left: 1000px;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff00;
+}
+
+.hidden {
+  display: none !important;
+}
+.kopce1 {
+  background-color: #ffffff00;
 }
